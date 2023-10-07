@@ -3,10 +3,10 @@ const path = require( 'path');
 const mongoose= require ('mongoose');
 const bodyParser = require('body-parser');
 const config = require('./config');
-import userRoute from './routes/userRoute';
-import productRoute from './routes/productRoute';
-import orderRoute from './routes/orderRoute';
-import uploadRoute from './routes/uploadRoute';
+const userRoute= require('./routes/userRoute');
+const productRoute= require('./routes/productRoute');
+const orderRoute= require('./routes/orderRoute');
+const uploadRoute= require('./routes/uploadRoute');
 
 const mongodbUrl = config.MONGODB_URL;
 mongoose
