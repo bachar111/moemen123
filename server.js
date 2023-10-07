@@ -2,7 +2,7 @@ const express = require('express');
 const path = require( 'path');
 const mongoose= require ('mongoose');
 const bodyParser = require('body-parser');
-import config from './config';
+const config = require('./config');
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
 import orderRoute from './routes/orderRoute';
