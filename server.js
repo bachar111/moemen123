@@ -26,7 +26,7 @@ app.use('/api/orders', orderRoute);
 app.use((req,res)=>{
      res.send("API is running")
 })
-const PORT = process.env.PORT || 7666
+const PORT = process.env.PORT || 5000
 app.get('/api/config/paypal', (req, res) => {
   res.send(config.PAYPAL_CLIENT_ID);
 });
